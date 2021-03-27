@@ -194,37 +194,213 @@ Now that you have your app looking good, let's make it do stuff!
 
 <hr/>
 
+# CE 20 Starts Here. Make it CP 3
+
+1. Copy over your work from the `src/cs1302/gui` directory of `cs1302-components`
+   (from the [CSCI 1302 JavaFX Custom Component Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/components/components.md))
+   into the `src/cs1302/ce21` directory of `cs1302-ce21` and update the package
+   statements accordingly (i.e., make sure the package is `cs1302.ce21`). 
+   **You should create `src/cs1302/ce21` if it does not exist.**
+   
+1. If you did not finish 
+   [CSCI 1302 JavaFX Custom Component Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/components/components.md), 
+   then finish that work in the code you just copied over. Remember, in the custom
+   component tutorial, you used custom components to reduce the containment heirarchy from this:
+   
+   ```
+                                                             --|
+                         Stage                                 |
+                           |                                   |
+                         Scene                                 |
+          |--              |                                   |
+          |               HBox                                 |
+          |                |\                                  |
+          |                | \------------------\              |
+          |                |                    |              |
+          |               VBox                 VBox            | Overall
+          |               / \                  / \             | Containment
+   Scene  |              /   \                /   \            | Hierarchy
+   Graph  |            HBox  ImageView      HBox  ImageView    |
+          |            / \                  / \                |
+          |           /   \                /   \               |
+          |    TextField  Button    TextField  Button          |
+          |--                                                --|
+   ```   
+   
+   to something like this:
+   
+   ```
+                                                             --|
+                         Stage                                 |
+                           |                                   |
+                         Scene                                 |
+          |--              |                                   | Overall
+          |               HBox                                 | Containment
+   Scene  |                |\                                  | Hierarchy
+   Graph  |                | \------------------\              |
+          |                |                    |              |
+          |           ImageLoader          ImageLoader         |
+          |--                                                --|
+   ```
+   
+1. **Compile and run your code without any errors or warnings,
+   make sure it passes a `checkstyle` audit, 
+   then stage and commit your changes.**
+   
+1. Tag your commit so that it's easier to checkout at a later
+   point in time:
+   
+   ```
+   $ git tag tutorial
+   ```
+   
+   [Tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging) allows us
+   to give the commit a more convenient name to a commit than its
+   hexademical checksum.
+
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-1-success?style=for-the-badge)
+
+<hr/>
+
+### Checkpoint 2 Steps
+
+1. Now, read the class-level API documentation for the
+   [`TilePane`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/layout/TilePane.html)
+   class, then adapt your code to replace the highest `HBox` in the 
+   containment hiearchy with a `TilePane` object.
+   
+   * The `TilePane` object's `prefColumns` should be set to `4` using the appropriate setter
+     method.
+     
+   * The `TilePane` object should have four `ImageLoader` objects as its children.
+   
+   Here is the corresponding containment hierarchy for what is expected:
+   
+   ```
+                                                             --|
+                              Stage                            |
+                                |                              |
+                              Scene                            |
+          |--                   |                              | Overall
+          |                 TilePane                           | Containment
+   Scene  |                    /|\                             | Hierarchy
+   Graph  |          /--------/ | \--------\                   |
+          |         /          / \          \                  |
+          |      ImageLoader  /   \        ImageLoader         |
+          |                  /     \                           |
+          |        ImageLoader     ImageLoader                 |
+          |--                                                --|
+   ```
+   
+1. **Compile and run your code without any errors or warnings,
+   make sure it passes a `checkstyle` audit, 
+   then stage and commit your changes.**
+   
+1. Now, increase the number of `ImageLoader` objects to `8`. This
+   should be easy if you used a loop.
+   
+1. Commit these changes then tag your commit so that it's easier to checkout 
+   at a later point in time:
+   
+   ```
+   $ git tag tilepane
+   ```
+      
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-2-success?style=for-the-badge)
+
+<hr/>
+
+### Checkpoint 3 Steps
+
+1. Now, read the class-level API documentation for the
+   [`TabPane`](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/TabPane.html)
+   and [`Tab`](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/Tab.html)
+   classes, then adapt your code to replace the `TilePane` in the 
+   containment hiearchy with a `TabPane` object.
+    
+   * The `TabPane` object should have four `Tab` objects, each containing an `ImageLoader` object
+     as its child.
+   
+   Here is the corresponding containment hierarchy for what is expected:
+   
+   ```
+                                                             --|
+                              Stage                            |
+                                |                              |
+                              Scene                            |
+          |--                   |                              | Overall
+          |                  TabPane                           | Containment
+   Scene  |                    /|\                             | Hierarchy
+   Graph  |          /--------/ | \--------\                   |
+          |        Tab          |          Tab                 |
+          |        /           / \           \                 |
+          |     ImageLoader  Tab Tab         ImageLoader       |
+          |                  /     \                           |
+          |        ImageLoader     ImageLoader                 |
+          |--                                                --|
+   ```
+   
+1. **Compile and run your code without any errors or warnings,
+   make sure it passes a `checkstyle` audit, 
+   then stage and commit your changes.**
+   
+1. Tag your commit so that it's easier to checkout at a later
+   point in time:
+   
+   ```
+   $ git tag tabpane
+   ```
+
+1. View the condensed, graphical version of your Git log.
+   Since you tagged each relevant commit with a name, you
+   can go back in time by checking out those commits more
+   easily. For example,
+   
+   ```
+   $ git checkout tutorial
+   $ rm -rf bin/*
+   ```
+   
+   Then, compile and run to see what your exercise looked like
+   at that point in time!
+
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-3-success?style=for-the-badge)
+
+<hr/>
+
 ### Submission Steps
 
 **Each student needs to individually submit their own work.**
 
-1. Create a plain text file called `SUBMISSION.md` directly inside the `cs1302-ce19`
-   directory with the following information.
+1. Create a plain text file called `SUBMISSION.md` directly inside the `cs1302-hw08`
+   directory with the following information:
 
-   1. Your name and UGA ID number;
-   1. Collaborator names, if any; and
-   1. If you created the API website, include the full link to the site you generated.
-   
+   1. Your name and UGA ID number
+  
    Here is an example of the contents of `SUBMISSION.md`.
    
    ```
-   1. Sally Smith (811-000-999)
-   2. Collaborators: Joe Allen, Stacie Mack
-   3. https://webwork.cs.uga.edu/~user/cs1302-ce19-doc
+   Sally Smith (811-000-999)
    ```
 
-1. Change directories to the parent of `cs1302-ce19` (e.g., `cd ..` from `cs1302-ce19`). If you would like
-   to make a backup tar file, the instructions are in the submissions steps for [ce02](https://github.com/cs1302uga/cs1302-ce02).
+1. Change directories to the parent of `cs1302-hw08` (e.g., `cd ..` from `cs1302-hw08`). If you would like
+   to make a backup tar file, the instructions are in the submissions steps for [hw01](https://github.com/cs1302uga/cs1302-hw01).
    We won't repeat those steps here and you can view them as optional.
    
 1. Use the `submit` command to submit this exercise to `csci-1302`:
    
    ```
-   $ submit cs1302-ce19 csci-1302
+   $ submit cs1302-hw08 csci-1302
    ```
    
    Read the output of the submit command very carefully. If there is an error while submitting, then it will displayed 
-   in that output. Additionally, if successful, the submit command creates a new receipt file in the directory you 
+   in that output. Additionally, if successful, the `submit` command creates a new receipt file in the directory you 
    submitted. The receipt file begins with rec and contains a detailed list of all files that were successfully submitted. 
    Look through the contents of the rec file and always remember to keep that file in case there is an issue with your submission.
 
