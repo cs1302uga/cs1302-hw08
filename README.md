@@ -42,14 +42,6 @@ will serve as a helpful study guide for the exam.
    $ git clone --depth 1 https://github.com/cs1302uga/cs1302-hw08.git
    ```
 
-1. Change into the `cs1302-hw08` directory that was just created and look around. There should be
-   multiple Java files contained within the directory structure. To see a listing of all of the 
-   files under the `src` subdirectory, use the `find` command as follows:
-   
-   ```
-   $ find src
-   ```
-
 ## Exercise Steps
 
 ### Checkpoint 1 Steps
@@ -58,7 +50,7 @@ will serve as a helpful study guide for the exam.
    (from the [CSCI 1302 JavaFX Custom Component Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/components/components.md))
    into the `src/cs1302/gui` directory of `cs1302-hw08` and update the package
    statements accordingly (i.e., make sure the package is `cs1302.gui`). 
-   **You should create `src/cs1302/gui` if it does not exist.**
+   **You should create the `src/cs1302/gui` directory if it does not exist.**
    
 1. If you did not finish 
    [CSCI 1302 JavaFX Custom Component Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/components/components.md), 
