@@ -5,7 +5,7 @@
 > Words, words, words.
 > **-- William Shakespeare, _Hamlet_**
 
-This class exercise explores creating graphical user interfaces (GUIs) using the JavaFX library. Students
+This homework explores creating graphical user interfaces (GUIs) using the JavaFX library. Students
 will create an interactive, tabbed GUI that loads images (one per tab) from a specified URL. The program 
 supports images in BMP, GIF, JPEG, and PNG formats. Students will need to create custom JavaFX components 
 by extending (inheriting from) existing JavaFX components. 
