@@ -1,6 +1,6 @@
 # cs1302-hw08 Fun with Components and Containers
 
-![Approved for: Spring 2021](https://img.shields.io/badge/Approved%20for-Spring%202021-success)
+![Approved for: Fall 2021](https://img.shields.io/badge/Approved%20for-Fall%202021-blue)
 
 > Words, words, words.
 > **-- William Shakespeare, _Hamlet_**
