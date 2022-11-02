@@ -47,13 +47,13 @@ will serve as a helpful study guide for the exam.
 ### Checkpoint 1 Steps
 
 1. Copy over your work from the `src/cs1302/gui` directory of `cs1302-components`
-   (from the [CSCI 1302 JavaFX Custom Component Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/components/components.md))
+   (from the [CSCI 1302 JavaFX Custom Component Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/components/components.md))
    into the `src/cs1302/gui` directory of `cs1302-hw08` and update the package
    statements accordingly (i.e., make sure the package is `cs1302.gui`). 
    **You should create the `src/cs1302/gui` directory if it does not exist.**
    
 1. If you did not finish 
-   [CSCI 1302 JavaFX Custom Component Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/components/components.md), 
+   [CSCI 1302 JavaFX Custom Component Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/components/components.md), 
    then finish that work in the code you just copied over. Remember, in the custom
    component tutorial, you used custom components to reduce the containment heirarchy from this:
    
@@ -118,7 +118,7 @@ will serve as a helpful study guide for the exam.
 ### Checkpoint 2 Steps
 
 1. Now, read the class-level API documentation for the
-   [`TilePane`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/layout/TilePane.html)
+   [`TilePane`](https://openjfx.io/javadoc/17/javafx.graphics/javafx/scene/layout/TilePane.html)
    class, then adapt your code to replace the highest `HBox` in the 
    containment hierarchy with a `TilePane` object.
    
@@ -174,8 +174,8 @@ will serve as a helpful study guide for the exam.
 ### Checkpoint 3 Steps
 
 1. Now, read the class-level API documentation for the
-   [`TabPane`](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/TabPane.html)
-   and [`Tab`](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/Tab.html)
+   [`TabPane`](https://openjfx.io/javadoc/17/javafx.controls/javafx/scene/control/TabPane.html)
+   and [`Tab`](https://openjfx.io/javadoc/17/javafx.controls/javafx/scene/control/Tab.html)
    classes, then adapt your code to replace the `TilePane` in the 
    containment hiearchy with a `TabPane` object.
     
