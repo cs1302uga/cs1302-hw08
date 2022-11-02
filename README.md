@@ -1,6 +1,6 @@
 # cs1302-hw08 Fun with Components and Containers
 
-![Approved for: Spring 2022](https://img.shields.io/badge/Approved%20for-Spring%202022-purple) 
+![Approved for: Fall 2022](https://img.shields.io/badge/Approved%20for-Fall%202022-darkgreen)
 
 > Words, words, words.
 > **-- William Shakespeare, _Hamlet_**
@@ -17,10 +17,10 @@ by extending (inheriting from) existing JavaFX components.
 
 ## References and Prerequisites
 
-* [CSCI 1302 JavaFX Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/javafx/javafx.md)
-* [CSCI 1302 JavaFX Custom Component Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/components/components.md)
-* [JavaFX 11 Bookmarks](https://github.com/cs1302uga/cs1302-tutorials/blob/master/javafx/javafx-bookmarks.md)
-* [JavaFX 11 API Documentation](https://openjfx.io/javadoc/11/)
+* [CSCI 1302 JavaFX Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/javafx/javafx.md)
+* [CSCI 1302 JavaFX Custom Component Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/components/components.md)
+* [JavaFX Bookmarks](https://github.com/cs1302uga/cs1302-tutorials/blob/master/javafx/javafx-bookmarks.md)
+* [JavaFX API Documentation](https://openjfx.io/javadoc/17/)
 
 ## Questions
 
