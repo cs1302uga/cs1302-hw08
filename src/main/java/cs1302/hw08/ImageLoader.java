@@ -10,23 +10,30 @@ import javafx.scene.image.ImageView;
 import javafx.scene.image.Image;
 import javafx.scene.layout.Priority;
 
+/**
+ * A custom component that allows the user to enter a URL corresponding to an
+ * image and then load the image into an ImageView.
+ */
 public class ImageLoader extends VBox {
-    /** The container for the url textfield and the load image button */
+    /** The container for the url textfield and the load image button. */
     HBox urlLayer;
     TextField url;
     Button loadButton;
 
-    /** The container for the loaded image */
+    /** The container for the loaded image. */
     ImageView imgView;
 
-    /** A default image which loads when the application starts */
+    /** A default image which loads when the application starts. */
     private static final String DEFAULT_IMG =
         "http://cobweb.cs.uga.edu/~mec/cs1302/gui/default.png";
 
-    /** Default height and width for Images */
+    /** Default height and width for Images. */
     private static final int DEF_HEIGHT = 500;
     private static final int DEF_WIDTH = 500;
 
+    /**
+     * Creates a new Image Loader.
+     */
     public ImageLoader() {
         super();
         urlLayer = new HBox(8);
@@ -58,7 +65,7 @@ public class ImageLoader extends VBox {
         try {
             Image newImg = new Image(url.getText(), DEF_HEIGHT, DEF_WIDTH, false, false);
             imgView.setImage(newImg);
-        } catch(IllegalArgumentException iae) {
+        } catch (IllegalArgumentException iae) {
             System.out.println("The supplied URL is invalid");
         } // try
     } // loadImage

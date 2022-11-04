@@ -18,6 +18,9 @@ public class ImageApp extends Application {
     ImageLoader loader1;
     ImageLoader loader2;
 
+    /**
+     * Constructs a new image application.
+     */
     public ImageApp() {
         System.out.println("2) Creating an instance of the ImageApp Application");
 
