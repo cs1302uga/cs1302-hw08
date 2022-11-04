@@ -74,7 +74,7 @@ will serve as a helpful study guide for the exam.
    at a later point in time:
    
    ```
-   $ git tag script
+   $ git tag tutorial
    ```
       
    [Tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging) allows us
@@ -191,7 +191,6 @@ will serve as a helpful study guide for the exam.
    
    ```
    $ git checkout tutorial
-   $ rm -rf bin/*
    ```
    
    Then, compile and run to see what your exercise looked like
