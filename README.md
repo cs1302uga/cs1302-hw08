@@ -66,7 +66,7 @@ will serve as a helpful study guide for the exam.
           |--                                                --|
    ```
    
-1. Compile and run the code using Maven[https://github.com/cs1302uga/cs1302-tutorials/blob/master/maven.md] commands. 
+1. Compile and run the code using [Maven](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/maven.md) commands. 
 
 1. Create a compile script so you don't have to retype those commands each time.
 
