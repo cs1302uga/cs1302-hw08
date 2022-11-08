@@ -68,6 +68,10 @@ will serve as a helpful study guide for the exam.
    
 1. Compile and run the code using [Maven](https://github.com/cs1302uga/cs1302-tutorials/blob/alsi/maven.md) commands. 
 
+   **NOTE:** The starter code includes a `module-info.java` file for the `cs1302.hw08` module. If you
+   encounter an "unnamed module" error when using `mvn exec:java`, then use `cs1302.hw08/cs1302.hw08.ImageDriver` 
+   for the value of the `-DmainClass` option instead of `cs1302.hw08.ImageDriver`.
+
 1. Create a compile script so you don't have to retype those commands each time.
 
 1. Stage and commit your compile script then tag your commit so that it's easier to checkout 
