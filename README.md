@@ -70,7 +70,7 @@ will serve as a helpful study guide for the exam.
 
    **NOTE:** The starter code includes a `module-info.java` file for the `cs1302.hw08` module. If you
    encounter an "unnamed module" error when using `mvn exec:java`, then use `cs1302.hw08/cs1302.hw08.ImageDriver` 
-   for the value of the `-DmainClass` option instead of `cs1302.hw08.ImageDriver`.
+   for the value of the `-Dexec.mainClass` option instead of `cs1302.hw08.ImageDriver`.
 
 1. Create a compile script so you don't have to retype those commands each time.
 
