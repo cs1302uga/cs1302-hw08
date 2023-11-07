@@ -6,7 +6,7 @@ import javafx.stage.Stage;
 import javafx.scene.layout.HBox;
 
 /**
- * A basic JavaFX 8 program which takes a user specified URL and loads it
+ * A basic JavaFX 17 program which takes a user specified URL and loads it
  * into an {@code ImageView}.
  *
  */
